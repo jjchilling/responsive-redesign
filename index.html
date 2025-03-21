@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AVON Cinema</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AVON</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Now Playing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Coming Soon</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Special Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Trailers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
+                </ul>
+                
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zM7.12 13.1l.03-.1h9.69l1.25-5H6.48l-.78-4H2V2h4.38l.82 4.23 1.72 8.77H19v2H6.43c-.74 0-1.39-.41-1.72-1.06L3.14 12H1v-2h2l1.12 5.1z"/>
+                </svg>
+            </div>
+            </div>
+        </nav>
+
+        <!-- <header class="header d-flex justify-content-center align-items-center">
+            <div class="header-image"></div>
+        </header> -->
+
+        <div class="overall-container d-flex flex-column align-items-center">
+
+            <div class="container-fluid content-container d-flex flex-column align-items-center">
+                <div class="row w-100">
+                    <div class="text-banner p-4 d-flex flex-column align-self-start">ENTERTAINING THE DISCERNING MOVIE LOVER SINCE 1938</div>
+                    <div class="col-md-6 d-flex flex-column">
+                        <div class="p-4 section-box d-flex flex-column">DIRECTIONS</div>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8018484308353!2d-71.40068412407188!3d41.82772647126151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4450734b94b75%3A0x3f8bb93d8fdfc7b2!2s260%20Thayer%20St%2C%20Providence%2C%20RI%2002906%2C%20USA!5e0!3m2!1sen!2sus!4v1710979294554!5m2!1sen!2sus" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <div class="p-4 section-box d-flex flex-column" >RENT OUR THEATRE</div>
+                            <div class="p-4 section-box d-flex flex-column">
+                                The Avon Cinema has been located on Providence's historic East Side since 1938. Art Deco architecture.
+                                Available for location shooting, screenings, or premieres. We are unable to obtain specific film titles for private showings.
+                                Contact Richard Dulgarian
+                                renttheavon@gmail.com
+                                (401) 421-0020.
+                                If you have any questions or comments about this site, please direct them to emailtheavon@gmail.com.
+                                Site Design & Development Provided by Carbon Arc Media
+                            </div>
+                        </div>
+
+                         <div class="col-md-6 d-flex flex-column">
+                            <div class="p-4 section-box">AVON CINEMA</div>
+                            <div class="p-4 section-box">260 Thayer Street
+                                Providence, RI 02902
+                                24 Hour Movie Information Line 421-AVON
+                                Administrative Office 421-0020
+                            </div>
+                            <div class="p-4 section-box">ADMISSION</div>
+                            <div class="p-4 section-box">General Admission is $13.50
+                                Matinees are only $11.00
+                                Admission for children under 12 is $11.00 at all times
+                                Advance ticket sales are not available
+                            </div>
+                            <div class="p-4 section-box image-container">
+                                <img src="seat-guide.png" style="margin-top: 100px;"alt="Cinema Seat" class="theater-image">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="container-fluid content-container d-flex flex-column align-items-center">
+                    <div class="row w-100">
+                        <div class="text-banner p-4 d-flex flex-column align-self-start">NOW PLAYING</div>
+                    </div>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="image1.png" class="carousel-image active" alt="Image 1">
+                        <img src="image2.png" class="carousel-image" alt="Image 2">
+                        <img src="image3.png" class="carousel-image" alt="Image 3">
+                    </div>
+                    <button class="carousel-btn left">&#10094;</button>
+                    <button class="carousel-btn right">&#10095;</button>
+                </div>
+
+                <div class="button-container">
+                    <button class="buy-btn">BUY NOW</button>
+                </div>
+
+                <footer class="footer">
+                    <p>&copy; 2025 AVON Cinema. All Rights Reserved.</p>
+                </footer>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("avon-header.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center top; 
+    background-attachment: fixed; 
+}
+
+.rent-theatre-container {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0; 
+}
+
+.overall-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 600px;
+}
+.navbar {
+    padding: 20px 0;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white;
+    margin-right: 50px; 
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+    margin-left: -20px; 
+}
+
+.navbar-nav .nav-link {
+    padding: 0 30px;
+    text-transform: uppercase;
+    color: white; 
+    letter-spacing: 2px; 
+    font-size: 1.4rem; 
+}
+
+.navbar-nav .nav-link:hover {
+    opacity: 0.8;
+}
+
+.navbar .cart-icon {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    margin-left: 30px; 
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1400px;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto; 
+    overflow: hidden;
+}
+
+.text-banner {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 130%;
+    text-align: left; 
+    align-self: flex-start; 
+    margin-left: 12px;
+}
+
+.theater-image {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.section-box {
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 10px; 
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 0; 
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 750px;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    filter: brightness(50%);
+    opacity: 0.6;
+    transform: scale(0.8);
+    z-index: 1;
+}
+
+.carousel-image.active {
+    filter: brightness(100%);
+    opacity: 1;
+    transform: scale(1);
+    z-index: 3;
+}
+
+.carousel-image.prev {
+    transform: translateX(-45%) scale(0.9);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.carousel-image.next {
+    transform: translateX(45%) scale(0.9);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 12px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: auto; 
+}
+
+.carousel-btn.left { left: 10px; }
+
+.carousel-btn.right { right: 10px; }
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9; 
+    margin: 20px auto;
+    margin-left: 22px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: auto; 
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.buy-btn {
+    background-color: #521310;
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%); 
+
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.buy-btn:hover {
+    background-color: #FF4446; 
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+@media (max-width: 768px) {
+    .header-image {
+        height: 200px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+
+    .text-banner {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .content-container {
+        max-width: 100%; 
+        padding: 0 15px;
+    }
+
+
+    .section-box {
+        padding: 12px; 
+    }
+
+    .map-container {
+        width: 90%; 
+        aspect-ratio: 4 / 3;
+        margin: 6px auto; 
+    }
+
+    .carousel {
+        height: 350px;
+    }
+
+    .carousel-image {
+        max-height: 300px; 
+    }
+
+    image-container {
+        width: 90%; 
+        margin: auto; 
+    }
+
+    .theater-image {
+        max-width: 100%; 
+        height: auto;
+    }
+}
