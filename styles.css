@@ -41,6 +41,7 @@ body {
     align-items: center;
     margin-top: 600px;
 }
+
 .navbar {
     padding: 20px 0;
     padding-left: 60px;
@@ -245,8 +246,10 @@ body {
     margin-top: auto;
 }
 @media (max-width: 768px) {
-    .header-image {
-        height: 200px;
+
+
+    .overall-container {
+        margin-top: 200px;
     }
 
     .navbar-nav {
